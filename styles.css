@@ -1,0 +1,300 @@
+body {
+    background: linear-gradient(to right, #5271ff, #303030, #007c70);
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#btnC {
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 100px;
+    
+}
+#btn1, #btn2, #btn3, #btn4 {    
+    display: flex;
+    width: 100px;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #c0c0c0;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+    color: #ffffff;
+    border-top: 2px solid #ffffff;
+}
+#btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {
+    color: #ffffff;
+    border-top: 2px solid #ffffff;
+    outline: none;
+}
+#title {
+    justify-self: center;
+    display: flex;
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 550;
+    margin: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+#lorem {
+    justify-self: center;
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    color: #ffffff6c;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 100px;
+}
+#subscriptionTxt {
+    justify-self: center;
+    display: flex;
+    position: relative;
+    font-size: 25px;
+    color: #ffffffb9;
+    font-family: sans-serif;
+    text-align: center;
+}
+#types {
+    display: flex;
+    justify-self: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff1f;
+    padding: 1px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff38;
+    box-shadow: 0 0 10px #ffffff34;
+    border-radius: 50px;
+    position: relative;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#type1 {
+    cursor: pointer;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff38;
+    color: #cacaca;
+    border-top-left-radius: 25px;    
+    border-bottom-left-radius: 25px;    
+    margin-right: 1px;
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+
+}
+#type2 {
+    cursor: pointer;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff38;
+    color: #cacaca;
+    margin: 0;
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 1px;
+}
+#type3 {
+    cursor: pointer;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff38;
+    color: #cacaca; 
+    border-top-right-radius: 25px;    
+    border-bottom-right-radius: 25px;
+    margin-right: 1px;  
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+        
+}
+#type1:hover, #type2:hover, #type3:hover {
+    color: #ffffff;
+}
+#type1:focus, #type2:focus, #type3:focus {
+    outline: none;
+    border: 1px solid #ffffff7c;
+    color: #ffffff;
+
+}
+
+
+.cardDefault {
+    display: none;
+}
+.cardType1 {
+    justify-self: center;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: #ffffff1f;
+    border: 1px solid #ffffff38;
+    backdrop-filter: blur(10px);
+    display: flex;
+    position: relative;
+    margin: 50px;
+    box-shadow: 0 0 10px #ffffff34;
+    animation: glowBox1 3s infinite ease-in-out;
+    position: relative;
+    text-align: start;
+    justify-content: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #c0c0c0;   
+    text-shadow: 0 0 10px #bfffac; 
+}
+.cardType2 {
+    justify-self: center;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: #ffffff1f;
+    border: 1px solid #ffffff38;
+    backdrop-filter: blur(10px);
+    display: flex;
+    position: relative;
+    margin: 50px;
+    box-shadow: 0 0 10px #ffffff34;
+    animation: glowBox2 3s infinite ease-in-out;
+    text-align: start;
+    justify-content: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #c0c0c0;   
+    text-shadow: 0 0 10px #42a4ff;     
+}
+.cardType3 {
+    justify-self: center;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: #ffffff1f;
+    border: 1px solid #ffffff38;
+    backdrop-filter: blur(10px);
+    display: flex;
+    position: relative;
+    margin: 50px;
+    box-shadow: 0 0 10px #ffffff34;
+    animation: glowBox3 3s infinite ease-in-out;
+    text-align: start;
+    justify-content: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family: sans-serif;  
+    color: #c0c0c0;   
+    text-shadow: 0 0 10px #ff0000;   
+}
+@keyframes glowBox1  {
+    0% {
+        box-shadow: 0 0 10px #bfffac;
+    }
+    50% {
+        box-shadow: 0 0 30px #bfffac;
+    }
+    100% {
+        box-shadow: 0 0 10px #bfffac;
+    }
+
+}
+
+@keyframes glowBox2  {
+    0% {
+        box-shadow: 0 0 10px #42a4ff;
+    }
+    50% {
+        box-shadow: 0 0 30px #42a4ff;
+    }
+    100% {
+        box-shadow: 0 0 10px #42a4ff;
+    }
+
+}
+@keyframes glowBox3 {
+    0% {
+        box-shadow: 0 0 10px #ff0000;
+    }
+    50% {
+        box-shadow: 0 0 30px #ff0000;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff0000;
+    }
+
+}
+
+#submitEmail {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    margin-bottom: 300px;
+}
+
+#emailInput {
+    display: flex;
+    width: 300px;
+    height: fit-content;
+    background-color: #ffffff1f;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff38;
+    box-shadow: 0 0 10px #ffffff34;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #cacaca;    
+    transition: all 0.3s ease-in-out;
+}
+#emailInput:focus {
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff7c;
+}
+#submitSubscription {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff1f;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff38;
+    box-shadow: 0 0 10px #ffffff34;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #cacaca;    
+    transition: all 0.3s ease-in-out;
+}
+#submitSubscription:hover{
+    color: #ffffff;
+
+}
+
+#submitSubscription:focus{
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff7c;
+}
+#submitSubscription:active{
+    color: #51ff00;
+    outline: none;
+    border: 1px solid #51ff007c;
+}
